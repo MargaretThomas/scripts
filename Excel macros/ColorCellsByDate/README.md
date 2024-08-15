@@ -22,9 +22,9 @@ This macro colors the cells in column B based on the dates in column A. Each uni
     
     -   Press `ALT + F8` to open the "Macro" dialog box.
     -   Select `ColorCellsByDate` and click `Run`.
-5.  **Adjust Sheet Name (if necessary):**
+5.  **Macro will run in the ActiveSheet:**
     
-    -   If your worksheet is not named "Sheet1", change `"Sheet1"` in the code to the name of your worksheet.
+    -   If you don't want the macro to run on the currently selected sheet, change `ActiveSheet.Name` in the code to the name of your worksheet.
 
 ### For Mac Users:
 
@@ -43,9 +43,9 @@ This macro colors the cells in column B based on the dates in column A. Each uni
     
     -   Press `Command + Option + R` to run the macro.
     -   Alternatively, go back to Excel, press `Option + F8`, select `ColorCellsByDate`, and click `Run`.
-5.  **Adjust Sheet Name (if necessary):**
+5.  **Macro will run in the ActiveSheet:**
     
-    -   If your worksheet is not named "Sheet1", change `"Sheet1"` in the code to the name of your worksheet.
+    -   If you don't want the macro to run on the currently selected sheet, change `ActiveSheet.Name` in the code to the name of your worksheet.
 
 ## Summary of What the Macro Does:
 

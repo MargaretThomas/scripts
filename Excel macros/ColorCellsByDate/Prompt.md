@@ -1,4 +1,5 @@
-Prompt:
+Initial Prompt:
+> Prompt will now start to differ from the macro code.
 
 I need a VBA macro for Excel that colors cells in column B based on the dates in column A. Each unique date should be assigned a different color. The macro should use a `Collection` to manage the dates and their corresponding colors.
 
