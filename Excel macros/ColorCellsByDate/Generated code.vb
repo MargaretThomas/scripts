@@ -9,7 +9,7 @@ Sub ColorCellsByDate()
     Dim i As Long
     Dim found As Boolean
 
-    Set ws = ThisWorkbook.Sheets("Sheet1") ' Change to your sheet name
+    Set ws = ThisWorkbook.Sheets(ActiveSheet.name) ' This macro will only run on the currently selected sheet aka the active sheet.
     lastRow = ws.Cells(ws.Rows.Count, "A").End(xlUp).Row
     Set dateCollection = New Collection
     
