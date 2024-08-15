@@ -1,7 +1,7 @@
 
 ## Overview
 
-This macro colors the cells in column B based on the dates in column A. Each unique date gets a different color. The code uses a `Collection` to keep track of the dates and their corresponding colors.
+This macro colors the cells in column A and B based on the dates in column A. Each unique date gets a different color. The code uses a `Collection` to keep track of the dates and their corresponding colors.
 
 ## Instructions
 
@@ -61,7 +61,7 @@ This macro colors the cells in column B based on the dates in column A. Each uni
     -   If not, it adds the date and assigns a new color index.
 -   **Apply Colors:**
     
-    -   It colors the cells in column B corresponding to each date in column A based on the assigned color index.
+    -   It colors the cells in column A and B corresponding to each date in column A based on the assigned color index.
 -   **Display Message:**
     
     -   A message box is displayed to indicate that the cells have been color-filled based on the dates in column A.

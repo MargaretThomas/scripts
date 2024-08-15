@@ -35,11 +35,14 @@ Sub ColorCellsByDate()
             If colorIndex > 56 Then colorIndex = 1 ' Reset color index if it exceeds 56
         End If
 
-        ' Apply the color to the corresponding cells in column B
+        ' Apply the color to the corresponding cells in column A and B
         For i = 1 To dateCollection.Count
             If dateCollection(i)(0) = currentDate Then
-                Set rng = ws.Range("B" & cell.Row & ":B" & cell.Row)
-                rng.Interior.ColorIndex = dateCollection(i)(1)
+                Set rngA = ws.Range("A" & cell.Row & ":A" & cell.Row)
+                rngA.Interior.colorIndex = dateCollection(i)(1)
+                
+                Set rngB = ws.Range("B" & cell.Row & ":B" & cell.Row)
+                rngB.Interior.colorIndex = dateCollection(i)(1)
                 Exit For
             End If
         Next i
