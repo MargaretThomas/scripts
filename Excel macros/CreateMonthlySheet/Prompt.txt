@@ -1,0 +1,15 @@
+You can use the below prompt to generate the macro.
+Note: the code generated may not match the exact code located in GeneratedCode.vb, adjust as necessary.
+
+"Write an Excel VBA macro that performs the following tasks:
+
+1.  Creates a new sheet in the current workbook, named with the current month and year (e.g., 'October 2024').
+2.  Sets up a table with headers 'Date' in column A and 'Task' in column B.
+3.  Populates the table with 5 rows per day of the current month.
+4.  In column A, include the date in the format 'dddd dd-mmm-yyyy' (e.g., 'Tuesday 01-Oct-2024').
+5.  Each day should appear in 5 consecutive rows.
+6.  Leave the cells in column B empty.
+7.  Formats the range as an Excel table using the style 'TableStyleMedium2' (which corresponds to 'Dark Teal, Table Style Medium 2').
+8.  Adjust the width of column A to 22.33 and column B to 77.88.
+9.  Check if a sheet with the same name already exists. If it does, display a message box informing the user and stop the macro without deleting the existing sheet.
+10.  After populating the date cells in column A, format them to be right-aligned."
