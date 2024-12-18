@@ -1,12 +1,16 @@
-// Select all the <a> elements within ytd-channel-renderer elements
+// Get all the channel links from ytd-channel-renderer elements
 const channelLinks = document.querySelectorAll('ytd-channel-renderer a.channel-link');
 
-// Iterate through each link and open it in a new tab
+// Create a Set to store unique URLs
+const uniqueUrls = new Set();
+
+// Iterate through each link and add its href to the Set
 channelLinks.forEach(link => {
-    const href = link.href;
-    if (href) {
-        window.open(href, '_blank');
-    }
+    uniqueUrls.add(link.href);
 });
 
-console.log(`${channelLinks.length} YouTube channel links opened in new tabs.`);
+// Open each unique URL in a new tab
+uniqueUrls.forEach(url => {
+    window.open(url, '_blank');
+});
+
